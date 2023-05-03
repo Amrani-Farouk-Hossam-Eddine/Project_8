@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website Design</title>
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/Lamborghini.css">
+</head>
+<body>
+    <div class="heade" id="header">
+        <nav>
+            <img src="images/mclaren_logo_icon_145799.png" alt="logo" class="loe">
+            <ul>
+                <li><a href="#" id="svg">P1</a></li>
+                <li><a href="#" id="Cen">765 LT</a></li>
+                <li><a href="#" id="sto">720 S</a></li>
+                <li><a href="#" id="evo">Sena</a></li>
+            </ul>
+            <div class="menu">
+                <ul>
+  
+                    <li ><a href="Inedx.html">Tesla</a>
+                        <ul>
+                            <li><a href="Lamborghini.html">Lamborghini</a></li>
+                            <li><a href="Ferrari.html">Ferrari</a></li>
+                            <li><a href="Mac.html">Maclaren</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+        
+        <div class="info">
+            <div>
+                <h2 id="timer">5.8 s</h2>
+                <p>0-100 mph</p>
+            </div>
+            <div>
+                <h2 id="speed">291 mph</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2 id="hp">759 hp</h2>
+                <p>Hourspower</p>
+            </div>
+            <div>
+                <h2 id="price">517,770$</h2>
+                <p>Price</p>
+            </div>
+            <div class="line">
+            </div>
+            <div>
+                <h2 id="model">P1</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var header = document.getElementById("header")
+        var svge = document.getElementById("svg")
+        var Cene = document.getElementById("Cen")
+        var stoe = document.getElementById("sto")
+        var evoe = document.getElementById("evo")
+        var model = document.getElementById("model")
+
+        svge.onclick = function (){
+            header.style.backgroundImage = "url(images/une3.jpg)"
+            model.innerHTML = "P1"
+            timer.innerHTML = "5.8 s"
+            speed.innerHTML = "291 mph"
+            hp.innerHTML = "859 hp"
+            price.innerHTML = "$1,15 million"
+        }
+        Cene.onclick = function (){
+            header.style.backgroundImage = "url(images/mclaren-765lt-par-hennessey-performance.jpg)"
+            model.innerHTML = "765 LT"
+            timer.innerHTML = "5.9 s"
+            speed.innerHTML = "225 mph"
+            hp.innerHTML = "750 hp"
+            price.innerHTML = "$382,500"
+        }
+        stoe.onclick = function (){
+            header.style.backgroundImage = "url(images/142758-cars-review-mclaren-720s-review-image1-ezlg8d9j1p.jpg)"
+            model.innerHTML = "720 S"
+            timer.innerHTML = "6.0 s"
+            speed.innerHTML = "220 mph"
+            hp.innerHTML = "740 hp"
+            price.innerHTML = "$582,700"
+        }
+        evoe.onclick = function (){
+            header.style.backgroundImage = "url(images/Senna-Hero1920x1080_crop-16x9.webp)"
+            model.innerHTML = "Sena"
+            timer.innerHTML = "5.5 s"
+            speed.innerHTML = "291 mph"
+            hp.innerHTML = "831 hp"
+            price.innerHTML = "$1.43 million"
+        }
+       
+    </script>
+
+</body>
+</html>

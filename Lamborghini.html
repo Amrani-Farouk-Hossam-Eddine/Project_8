@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website Design</title>
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/Lamborghini.css">
+</head>
+<body>
+    <div class="headere" id="header">
+        
+        <nav class="nav">
+            <img src="images/Lamborghini-Logo.svg.png" alt="logo" class="logoe">    
+            <ul>
+                <li><a href="#" id="svg">Aventador SVG</a></li>
+                <li><a href="#" id="Cen">Centenario</a></li>
+                <li><a href="#" id="sto">Huracan STO</a></li>
+                <li><a href="#" id="evo">Hurcan EVO</a></li>
+            </ul>
+            <div class="menu">
+                <ul>
+  
+                    <li ><a href="Inedx.html">Tesla</a>
+                        <ul>
+                            <li><a href="Lamborghini.html">Lamborghini</a></li>
+                            <li><a href="Ferrari.html">Ferrari</a></li>
+                            <li><a href="Mac.html">Maclaren</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="timer">5.8 s</h2>
+                <p>0-100 mph</p>
+            </div>
+            <div>
+                <h2 id="speed">291 mph</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2 id="hp">759 hp</h2>
+                <p>Hourspower</p>
+            </div>
+            <div>
+                <h2 id="price">517,770$</h2>
+                <p>Price</p>
+            </div>
+            <div class="line">
+            </div>
+            <div>
+                <h2 id="model">Aventador SVG</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var header = document.getElementById("header")
+        var svge = document.getElementById("svg")
+        var Cene = document.getElementById("Cen")
+        var stoe = document.getElementById("sto")
+        var evoe = document.getElementById("evo")
+        var model = document.getElementById("model")
+
+        svge.onclick = function (){
+            header.style.backgroundImage = "url(images/thumbnail.jpg)"
+            model.innerHTML = "Aventador SVG"
+            timer.innerHTML = "5.8 s"
+            speed.innerHTML = "291 mph"
+            hp.innerHTML = "759 hp"
+            price.innerHTML = "$517,770"
+        }
+        Cene.onclick = function (){
+            header.style.backgroundImage = "url(images/3-14.webp)"
+            model.innerHTML = "Centenario"
+            timer.innerHTML = "9.0 s"
+            speed.innerHTML = "217 mph"
+            hp.innerHTML = "750 hp"
+            price.innerHTML = "$1.92 million"
+        }
+        stoe.onclick = function (){
+            header.style.backgroundImage = "url(images/lamborghini-huracan-sto-2020-6980_21.jpg)"
+            model.innerHTML = "Huracan STO"
+            timer.innerHTML = "9.0 s"
+            speed.innerHTML = "200 mph"
+            hp.innerHTML = "640 hp"
+            price.innerHTML = " $327,838"
+        }
+        evoe.onclick = function (){
+            header.style.backgroundImage = "url(images/1-lamborghini-huracan-evo-rwd-2020-rt-hero-front.jpg)"
+            model.innerHTML = "Hurcan EVO"
+            timer.innerHTML = "9.1 s"
+            speed.innerHTML = "200 mph"
+            hp.innerHTML = "631 hp"
+            price.innerHTML = "$261,274"
+        }
+       
+    </script>
+
+</body>
+</html>

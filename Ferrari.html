@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website Design</title>
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/Lamborghini.css">
+</head>
+<body>
+    <div class="head" id="header">
+        <nav>
+            <img src="images/580b585b2edbce24c47b2c52.png" alt="logo" class="loge">
+            <ul>
+                <li><a href="#" id="svg">La Ferrari</a></li>
+                <li><a href="#" id="Cen">488 Pista</a></li>
+                <li><a href="#" id="sto">812 Super Fast</a></li>
+                <li><a href="#" id="evo">SF90 Stradalie</a></li>
+            </ul>
+            <div class="menu">
+                <ul>
+  
+                    <li ><a href="Inedx.html">Tesla</a>
+                        <ul>
+                            <li><a href="Lamborghini.html">Lamborghini</a></li>
+                            <li><a href="Ferrari.html">Ferrari</a></li>
+                            <li><a href="Mac.html">Maclaren</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="timer">4.7 s</h2>
+                <p>0-100 mph</p>
+            </div>
+            <div>
+                <h2 id="speed">789 hp</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2 id="hp">789 hp</h2>
+                <p>Hourspower</p>
+            </div>
+            <div>
+                <h2 id="price">$1 million</h2>
+                <p>Price</p>
+            </div>
+            <div class="line">
+            </div>
+            <div>
+                <h2 id="model">La ferrari</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var header = document.getElementById("header")
+        var svge = document.getElementById("svg")
+        var Cene = document.getElementById("Cen")
+        var stoe = document.getElementById("sto")
+        var evoe = document.getElementById("evo")
+        var model = document.getElementById("model")
+
+        svge.onclick = function (){
+            header.style.backgroundImage = "url(images/Ferrari-LaFerrari.jpg)"
+            model.innerHTML = "LaFerrari"
+            timer.innerHTML = "4.7 s"
+            speed.innerHTML = "291 mph"
+            hp.innerHTML = "789 hp"
+            price.innerHTML = "$1 million"
+        }
+        Cene.onclick = function (){
+            header.style.backgroundImage = "url(images/FERRARI-488-Pista-6247_3.jpg)"
+            model.innerHTML = "Centenario"
+            timer.innerHTML = "5.2 s"
+            speed.innerHTML = "212 mph"
+            hp.innerHTML = "711 hp"
+            price.innerHTML = "$330,000"
+        }
+        stoe.onclick = function (){
+            header.style.backgroundImage = "url(images/471188-ferrari-812-competizione-le-v12-atteint-son-apogee.jpg)"
+            model.innerHTML = "Huracan STO"
+            timer.innerHTML = "5.8 s"
+            speed.innerHTML = "217 mph"
+            hp.innerHTML = "789 hp"
+            price.innerHTML = "$330,000"
+        }
+        evoe.onclick = function (){
+            header.style.backgroundImage = "url(images/Ferrari-SF90-Stradale-Velos-Designwerks-RDB-LA-5-e1639052483460.webp)"
+            model.innerHTML = "Hurcan EVO"
+            timer.innerHTML = "5.5 s"
+            speed.innerHTML = "225 mph"
+            hp.innerHTML = "1000 hp"
+            price.innerHTML = "$507,000"
+        }
+       
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website Design</title>
+    <link rel="stylesheet" href="Css/Style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="images/logo.png" alt="logo" class="logo">
+            <ul class="fa">
+                <li><a href="#" id="models">Model S</a></li>
+                <li><a href="#" id="model3">Model 3</a></li>
+                <li><a href="#" id="modelx">Model X</a></li>
+                <li><a href="#" id="modely">Model Y</a></li>
+                
+            </ul>
+            <div class="menu">
+                <ul>
+  
+                    <li ><a href="Inedx.html">Tesla</a>
+                        <ul>
+                            <li><a href="Lamborghini.html">Lamborghini</a></li>
+                            <li><a href="Ferrari.html">Ferrari</a></li>
+                            <li><a href="Mac.html">Maclaren</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+          
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="timer">2.1 s</h2>
+                <p>0-60 mph</p>
+            </div>
+            <div>
+                <h2 id="speed">175 mph</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2 id="range">405 mi</h2>
+                <p>Max Range</p>
+            </div>
+            <div>
+                <h2 id="price">$94,990</h2>
+                <p>Price</p>
+            </div>
+            <div class="line">
+            </div>
+            <div>
+                <h2 id="model">Model S</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var header = document.getElementById("header")
+        var ms = document.getElementById("models")
+        var m3 = document.getElementById("model3")
+        var mx = document.getElementById("modelx")
+        var my = document.getElementById("modely")
+        var model = document.getElementById("model")
+
+        ms.onclick = function (){
+            header.style.backgroundImage = "url(images/image-1.png)"
+            model.innerHTML = "Model S"
+            timer.innerHTML = "2.1 s"
+            speed.innerHTML = "175 mph"
+            range.innerHTML = "405 mi"
+            price.innerHTML = "$94,990"
+        }
+        m3.onclick = function (){
+            header.style.backgroundImage = "url(images/image-2.png)"
+            model.innerHTML = "Model 3"
+            timer.innerHTML = "3.5 s"
+            speed.innerHTML = "162 mph"
+            range.innerHTML = "275 mi"
+            price.innerHTML = "$61,990."
+        }
+        mx.onclick = function (){
+            header.style.backgroundImage = "url(images/image-3.png)"
+            model.innerHTML = "Model X"
+            timer.innerHTML = "3.8 s"
+            speed.innerHTML = "155 mph"
+            range.innerHTML = "348 mi"
+            price.innerHTML = "$114,990"
+        }
+        my.onclick = function (){
+            header.style.backgroundImage = "url(images/image-4.png)"
+            model.innerHTML = "Model Y"
+            timer.innerHTML = "4.4 s"
+            speed.innerHTML = "155 mph"
+            range.innerHTML = "330 mi"
+            price.innerHTML = "$82 000"
+        }
+       
+    </script>
+
+</body>
+</html>
